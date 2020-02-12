@@ -1,0 +1,270 @@
+.conteiner {
+  width: 75%;
+  height: 75%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  box-shadow: 4px 4px 40px 12px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(41, 165, 155);
+}
+
+.carousel p {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.logo > p {
+  font-size: 12px;
+  text-align: center;
+  margin: 10px;
+  color: rgba(0, 0, 0, 0.314);
+}
+
+h5 {
+  color: white;
+  font-size: 0.8rem;
+  padding: 16px 16px 16px 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  margin: 0;
+}
+nav h1 {
+  border-bottom: 5px dotted rgb(41, 165, 155);
+  letter-spacing: 3px;
+  font-family: 'Lato', sans-serif;
+  display: inline;
+  font-size: 2rem;
+}
+
+nav {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  min-width: 175px;
+}
+
+.logo {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  height: 15%;
+}
+
+.nav {
+  height: 45%;
+  background-color: rgb(41, 165, 155);
+  opacity: 0.7;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9rem;
+  margin: 1px 5px;
+  border-bottom: solid rgba(107, 107, 107, 0.158) 2px;
+  padding: 6px 16px;
+}
+.nav-link:hover {
+  color: white;
+  background-color: rgb(17, 70, 65);
+}
+.sociale {
+  height: 8%;
+  display: flex;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.tweets {
+  background-color: rgb(22, 90, 83);
+  height: 27%;
+  opacity: 0.95;
+}
+
+.tweets p {
+  color: white;
+  opacity: 0.9;
+  padding: 0 20px;
+  text-align: left;
+  margin: 0;
+  font-size: 12px;
+}
+
+/* ikony */
+
+.fab {
+  font-size: 2rem;
+  padding: 14px 0 14px 24px;
+  transition: all ease-in-out 0.2s;
+}
+.fab:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+.icon {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 16px;
+  margin: 0;
+  transition: all ease-in-out 0.2s;
+}
+.icon-tlo {
+  background-color: rgba(41, 41, 41, 0.351);
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  z-index: 5;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.icon:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+/* kolory ikon sociali */
+.fa-facebook-square {
+  color: #3b5998;
+}
+.fa-twitter-square {
+  color: #00acee;
+}
+.fa-youtube-square {
+  color: #c4302b;
+}
+.fa-pinterest-square {
+  color: #bd081c;
+}
+/* Ustawienie tekstu na sliderze */
+.slider-text {
+  text-align: left;
+  position: absolute;
+  bottom: 7%;
+  left: 25%;
+}
+
+/*Aby slider był na cały ekran */
+.d-block {
+  position: relative;
+  width: 75vw;
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(90%);
+  filter: contrast(110%);
+  box-shadow: black;
+}
+
+/* Sciezki do slidera */
+.pic-0 {
+  background-image: url('img0.jpg');
+}
+.pic-1 {
+  background-image: url('img1.jpg');
+}
+.pic-2 {
+  background-image: url('img2.jpg');
+}
+.guziki {
+  display: flex;
+  position: absolute;
+  top: 5%;
+  right: 3%;
+}
+.button {
+  width: 75px;
+  height: 75px;
+  position: relative;
+  background-color: rgb(65, 65, 65);
+  margin: 10px;
+}
+footer {
+  height: 5%;
+  background-color: rgb(17, 70, 65);
+  color: white;
+  font-size: 0.7rem;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  transform: scale(2);
+}
+
+@media (max-width: 1693px) {
+  .tweets p {
+    font-size: 10px;
+  }
+  .footer {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 1500px) {
+  .fab {
+    font-size: 1.5rem;
+    padding: 10px 0 10px 20px;
+  }
+  .sociale {
+    height: 6%;
+  }
+  .tweets {
+    height: 29%;
+  }
+  .footer {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .conteiner {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .d-block {
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(90%);
+    filter: contrast(110%);
+  }
+  nav h1 {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 870px) {
+  .icon-tlo {
+    position: fixed;
+    top: 45%;
+    left: 175px;
+    z-index: 5;
+    text-align: center;
+    border-radius: 5px;
+  }
+  nav h1 {
+    font-size: 1.5rem;
+  }
+  .carousel-item p {
+    font-size: 1.5rem;
+  }
+}
